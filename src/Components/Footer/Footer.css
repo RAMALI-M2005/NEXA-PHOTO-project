@@ -1,0 +1,39 @@
+.Footer{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        font-size: 1.4rem;
+        font-weight: 700;
+        font-family: "Julee", serif;
+        color: aliceblue;
+        cursor: pointer;
+    }
+
+    p{
+        color: aliceblue;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .soicial-media-icons{
+        .ico{
+
+            &:hover{
+                *{
+                    color: #0A5CFE;
+                }
+            }
+            *{
+                color: aliceblue;
+                transition: .2s;
+                font-size: 1.9rem;
+            }
+        }
+    }
+
+}

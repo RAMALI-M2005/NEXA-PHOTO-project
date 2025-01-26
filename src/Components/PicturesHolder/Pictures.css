@@ -1,0 +1,111 @@
+.Pictures {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.Pictures h1 {
+    margin-bottom: 30px;
+}
+
+.Pictures .picture-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 40px;
+    flex: 1;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.Pictures .picture-box .boxIMG {
+    max-width: 400px;
+    width: 350px;
+    min-width: 300px;
+    border-radius: 6px;
+    height: auto; /* Allow height to adjust based on the image aspect ratio */
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center; /* Center the image horizontally */
+}
+
+.Pictures .picture-box .boxIMG:hover img {
+    transform: scale(1.13);
+}
+
+.picture-box .boxIMG img {
+    transition: .2s;
+    width: 100%; /* Make the image take full width of the box */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+    display: block; /* Remove any space below the image */
+}
+
+.Pictures .picture-box .boxIMG::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure the pseudo-element is on top */
+    transition: 0.2s;
+}
+
+.Pictures .picture-box .boxIMG:hover::before {
+    background-color: rgba(64, 63, 63, 0.3);
+}
+
+.Pictures .picture-box .boxIMG .downloadBTN{
+    display: none;
+    position: absolute;
+    color: #0A5CFE;
+    bottom: 5%;
+    right: 5%;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 30px;
+    background-color: aliceblue;
+    transition: .2s;
+    z-index: 3;
+
+    &:hover{
+        background-color: rgb(196, 196, 196);
+    }
+    &:active{
+        background-color: aliceblue;
+    }
+}
+
+.Pictures .picture-box .boxIMG:hover .downloadBTN{
+    display: flex;
+}
+
+.more-pictures-btn{
+    margin: 30px 0;
+    border-radius: 6px;
+    padding: 10px 10px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #0A5CFE;
+    font-size: 1.04rem;
+    font-weight: 500;
+    transition: .2s;
+    &:hover{
+        background-color: rgba(222, 222, 222, 0.485);
+        scale: 1.04;
+        box-shadow: 0 6px 8px #0A5CFE;
+        color: #0A5CFE;
+    }
+    &:active{
+        scale: 1;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,88 @@
+.Header{
+    width: 100%;
+    height: 70px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    position: absolute;
+    background-color: transparent;  /* Default state */
+    transition: background-color 0.3s ease; /* Smooth transition */
+
+    .search-option{
+        display: none;
+        justify-content: center;
+        width: 300px;
+        box-sizing: border-box;
+        align-items: center;
+
+        .SearchBar{
+            width: 100%;
+            background-color: rgb(23, 72, 116);
+            input{
+                height: 50px;
+                color: aliceblue;
+            }
+        }
+    }
+
+    .logo{
+        font-size: 1.4rem;
+        font-weight: 700;
+        font-family: "Julee", serif;
+        color: aliceblue;
+        cursor: pointer;
+    }
+
+
+    .nav{
+        display: flex;
+        align-items: center;
+        a{
+            margin: 0 15px;
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: .2s;
+
+            &:hover{
+                color:blue;
+            }
+
+            *{
+                color: aliceblue;
+            }
+        }
+    }
+}
+
+.Header.bg-black {
+    box-shadow: 0 3px 10px  rgba(3, 3, 87, 0.574);
+    background-color: aliceblue;  /* Background color turns black when scrolled past 400px */ /* Text color turns white when background is black */
+    *{
+        color: rgb(0, 10, 42); 
+    }  
+    .search-option{
+        display: flex !important;
+    }
+    .nav{
+        a{
+            color: rgb(0, 10, 42);
+            .user{
+               *{
+                color: rgb(0, 10, 42);
+               }
+                &:hover{
+                    *{
+                        color: blue;
+                    }
+                }
+            }
+            &:hover{
+                color: blue;
+            }
+        } 
+    }
+}

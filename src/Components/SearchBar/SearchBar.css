@@ -1,0 +1,31 @@
+.SearchBar{
+    width: 50%;
+    background-color: rgba(240, 248, 255, 0.262);
+    display: flex;
+    margin: auto 0;
+    border-radius: 20px;
+    align-items: center;
+    backdrop-filter: blur(10px);
+
+    .iconSearch{
+        margin: 0 8px;
+        *{
+            color: #A8DFF1;
+        }
+    }
+
+    input{
+        flex: 1;
+        border: none;
+        outline: none;
+        background: transparent;
+        height: 60px;
+        color: aliceblue;
+        font-size: 1.02rem;
+        font-weight: 500;
+
+        &::placeholder{
+            color: #A8DFF1;
+        }
+    }
+}

@@ -1,0 +1,96 @@
+.Main {
+    width: 100%;
+    padding:90px  20px 25px;
+    min-height: 65vh;
+    background: 
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.24) 0%,  /* starting color of the gradient */
+            rgba(0, 0, 0, 0.75) 100% /* ending color of the gradient */
+        ),
+        url("../../assets/ai-generated-8045019.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    background-position: 50%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: aliceblue;
+
+    h1{
+        color: #0A5CFE;
+        font-size: 2.4rem;
+    }
+    p{
+        font-size: .9rem;
+        margin-top: 20px;
+    }
+
+    .soicial-media-icons{
+        display: flex;
+        gap: 6px;
+        .ico{
+            color: aliceblue;
+            transition: .2s;
+            &:hover{
+                color: #0A5CFE;
+            }
+            cursor: pointer;
+            
+            *{
+                font-size: 1.9rem;
+                &:hover{
+                    color: #0A5CFE;
+                }
+            }
+        }
+    }
+
+    .secondBTNs{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: -15px;
+        margin-bottom: 10px;
+        
+        .btn-box{
+            display: flex;
+            gap: 15px;
+            
+            button{
+                padding:8px 15px ;
+                border-radius: 6px;
+                outline: none;
+                border: none;
+                cursor: pointer;
+                background-color: #0A5CFE;
+                color: white;
+                font-size: 1.02rem;
+                font-weight: 500;
+                transition: .2s;
+
+                &:nth-child(1){
+                    &:hover{
+                        background-color: #0a5bfeb3;
+                    }
+                    &:active{
+                        background-color: #0A5CFE;
+                    }
+                }
+
+                &:nth-child(2){
+                    background-color: transparent;
+                    border: 2px solid #0A5CFE;
+
+                    &:hover{
+                        background-color: #0A5CFE;
+                    }
+                    &:active{
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+
+}

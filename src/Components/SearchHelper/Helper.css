@@ -1,0 +1,31 @@
+.Helper{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+
+
+    .barsearch{
+        width: 100%;
+        height: 90px;
+        padding:80px 20px ;
+        background: url("../../assets/wine-glass-4764613.jpg");
+    }
+}
+
+/* Custom scrollbar styling */
+.Helper::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Handle */
+.Helper::-webkit-scrollbar-thumb {
+    background: #0A5CFE; 
+    border-radius: 20px;
+}
+
+/* Handle on hover */
+.Helper::-webkit-scrollbar-thumb:hover {
+    background: #0539a1; 
+
+}
