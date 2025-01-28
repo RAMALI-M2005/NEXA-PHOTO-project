@@ -12,7 +12,7 @@ const Pictures = () => {
       try {
         // Fetch 9 random pictures from Unsplash
         const response = await axios.get(
-          "https://api.unsplash.com/photos/random?client_id=0SHF0RPUJJAwH9BwQEjMRpPW777Z0nkWMOTbsyYnlr4&count=9"
+          "https://api.unsplash.com/photos/random?client_id=<YOUR_APP_ACCESS_KEY_FROM_UNSPLASH_API>&count=9"
         );
 
         // Update the state with the fetched pictures
