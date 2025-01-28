@@ -21,7 +21,7 @@ const SearchProvider = ({ children }) => {
 
     try {
       const response = await axios.get(
-        `https://api.unsplash.com/search/photos?client_id=0SHF0RPUJJAwH9BwQEjMRpPW777Z0nkWMOTbsyYnlr4&query=${query}`,
+        `https://api.unsplash.com/search/photos?client_id=<YOUR_APP_ACCESS_KEY_FROM_UNSPLASH_API>&query=${query}`,
         {
           params: {
             per_page: 10, // Limit results to 10 per page
